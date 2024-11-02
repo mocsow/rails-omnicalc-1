@@ -1,0 +1,6 @@
+<h1>Payment Results</h1>
+<p>
+  For a loan with an APR of <%= params[:apr] %>%, over <%= params[:years] %> years, with a principal of $<%= @principal %>,
+  the monthly payment is $<%= @monthly_payment.round(2) %>.
+</p>
+<a href="/payment/new">Calculate another payment</a>
